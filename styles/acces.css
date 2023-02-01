@@ -1,0 +1,19 @@
+#section2 h2 {
+    font-family: 'tangerine', cursive;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#section2 iframe {
+    display: block;
+    margin: 30px auto;
+}
+@media screen and (max-width: 767px) {
+    #section2 iframe {
+        width: 300px;
+        height: 300px;
+    }
+}

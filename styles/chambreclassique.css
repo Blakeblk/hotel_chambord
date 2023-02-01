@@ -1,0 +1,139 @@
+#index,
+#navigation-sticky-lastsection {
+  z-index: 4;
+}
+#h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  font-family: 'Odibee Sans', cursive;
+  margin-bottom: 0;
+}
+
+#css {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  font-family: 'Odibee Sans', cursive;
+}
+
+#css:hover {
+  background-color: rgb(167, 167, 15);
+  transition: 0.3s;
+}
+/*==================== CAROUSEL ====================*/
+
+.carousel-wrapper {
+  height: 193px;
+  position: relative;
+  width: 300px;
+  display: block;
+  margin: 50px auto;
+  border: 2px solid black;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('img/classic_room1.jpeg');
+  background-size: cover;
+}
+.item-2 {
+  background: url('img/deluxesuite_room1.jpeg');
+  background-size: cover;
+}
+.item-3 {
+  background: url('img/classic_room3.jpeg');
+  background-size: cover;
+}
+
+*:target ~ .item-1{
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+} 
+
+/*==================== SECTION 2 ====================*/
+
+#section2 p {
+  text-align: justify;
+  margin: auto;
+  padding: 0 20px 40px 20px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+/*==================== DESKTOP ====================*/
+@media screen and (min-width: 768px){
+  .carousel-wrapper {
+    height: 457px;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  .carousel-wrapper {
+    height: 600px;
+    width: 900px;
+  }
+  #section2 p {
+    padding-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .carousel-wrapper {
+    height: 703px;
+    width: 900px;
+  }
+  #section2__div {
+    display: flex;
+  }
+  #section2 p {
+    width: 300px;
+    padding: 10px;
+    width: 30%;
+  }
+}

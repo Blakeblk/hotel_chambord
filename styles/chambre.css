@@ -26,23 +26,24 @@
 .text-align-center {
     text-align: center;
 }
-
-/*==================== BODY ====================*/
-h1 {
+/*==================== SECTION 1 ====================*/
+h2,
+h3 {
     font-family: 'Cinzel Decorative', cursive;
-    font-weight: 100;
-    letter-spacing: 0.625rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-family: 'Cinzel Decorative', cursive;
-    letter-spacing: .188rem;
-    font-size: medium;
-    padding-top: 20px;
-    text-align: center;
-    color: #ffffff;
+    font-size: 1.4rem;
 }
 
+h3 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 
 /*==================== HEADER ====================*/
 header {
@@ -152,11 +153,13 @@ header {
     color: #000000;
     margin-left: 5px;
     cursor: pointer;
+    width: auto;
 }
 
 .logo_hotel {
     height: 57px;
     margin-left: 20px;
+    width: auto;
 }
 
 /* show menu */
@@ -193,19 +196,21 @@ header {
     font-family: 'Tangerine', cursive;
 }
 
-#section1 a {
-    text-decoration: none;
-}
-
 #section1__p:hover {
     color: #ababab;
     cursor: pointer;
     transition: 0.5s;
 }
 
+#section1 a {
+    text-decoration: none;
+}
+
 #section1__h1 {
     color: #ffffff;
     padding-bottom: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: 0.625rem;
 }
 
 .section1__p1 {
@@ -221,94 +226,26 @@ header {
 }
 
 /*==================== SECTION 2 ====================*/
-
-#section2 {
-    background-color: #000000;
-    height: 1350px;
-}
-.img__section2 {
-    height: 400px;
-}
-
-#section2__p {
-    font-family: 'Tangerine', cursive;
-    text-align: justify;
-    color: #ffffff;
-    margin: 20px 15px;
-}
-
-#section2__div {
-   background-color: #ffffff;
-   width: 80%;
-   height: 200px;
-   margin: 20px auto;
-}
-
-.section2__p {
-    color: #000000;
-    text-align: center;
-    margin: 20px auto;
-    font-family: 'Tangerine', cursive;
-}
-
-.section2_tel {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-}
-
-#setion2__first-p {
-    padding-top: 30px;
-    margin-top: 40px;
-}
-
-#section2__reservation {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    letter-spacing: 4px;
-    font-size: 0.8rem;
-    padding: 7px;
-}
-
-#section2__reservation:hover {
-    color: #000000;
-}
-
-#section2__border {
-    background-color: #000000;
+#section2 p {
+    font-family: 'tangerine', cursive;
     width: 90%;
-    margin-top: 40px;
+    text-align: justify;
+    margin: 20px auto;
 }
 
-#section2__border:hover {
-    background-color: white;
-    border: 1px solid #000000;
-}
-
-/*==================== SECTION 3 ====================*/
-
-.setion3__img {
+#section2 img {
     width: 300px;
     display: block;
     margin: auto;
 }
 
-.section3__h2 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 1rem;
-    margin: 20px auto;
+#section2 a h3 {
+    color: #000000;
 }
 
-.section3__p {
-    font-family: 'Tangerine', cursive;
-    text-align: justify;
-    width: 90%;
-    margin: 20px auto;
+#section2 a {
+    text-decoration: none;
 }
-
 
 
 /*==================== LAST SECTION ====================*/
@@ -389,8 +326,6 @@ footer h3 {
     font-family: 'Tangerine', cursive;
     font-style: italic;
     font-size: 1.125rem;
-    text-decoration: underline;
-    text-align: center;
 }
 
 #footer__icon {
@@ -420,16 +355,7 @@ footer h3 {
 
 }
 
-/*==================== CAROUSEL ====================*/
-  
-
 /*==================== TABLETTE ====================*/
-
-@media screen and (min-width: 580px) {
-    .img__section2 {
-        height: 600px;
-    }
-}
 
 @media screen and (min-width: 767px) {
    .footer__tablet {
@@ -462,6 +388,15 @@ footer h3 {
    .section1__flex__tablet {
     display: flex;
    }
+
+   .section2__responsive__tablet {
+    display: flex;
+    justify-content: space-around;
+   }
+   .section2__responsive__tablet div {
+    width: 50%;
+   }
+   
 }
 
 
@@ -476,13 +411,6 @@ footer h3 {
         width: 300px;
         border-top: none;
         padding: 10px 0px;
-    }
-    #section3 {
-        display: flex;
-        justify-content: space-around;
-    }
-    #section3 div {
-        width: 33%;
     }
     header {
         height: 70px;
@@ -554,11 +482,6 @@ footer h3 {
         justify-content: center;    
     }
 
-    .img__section2 {
-        display: block;
-        margin: auto;
-        height: 60%;
-    }
     #footer__desktop {
         display: flex;
         justify-content: center;
@@ -583,5 +506,9 @@ footer h3 {
         .logo_hotel {
             height: 70px;
             margin-top: 10px;
+        }
+        #section2__responsive__desktop {
+            display: flex;
+            justify-content: space-around;
         }
     }

@@ -1,0 +1,16 @@
+.section2_h2 {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+}
+
+#section2 p {
+    font-family: 'raleway', sans-serif;
+    text-align: justify;
+    padding: 30px 20px;
+}
+
+#section2 img{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}

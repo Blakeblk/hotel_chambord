@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -6,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Chambord</title>
+    <title>Événements - Hôtel Chambord</title>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -17,12 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+SC:wght@300&family=Lobster&family=Poppins&display=swap"
       rel="stylesheet"/>
       <link rel="stylesheet" href="styles/base.css">
-      <link rel="stylesheet" href="styles/reservation.css">
+      <link rel="stylesheet" href="styles/acces.css">
+      <link rel="stylesheet" href="styles/evenement.css">
       <link rel="icon" type="image/x-icon" href="img/logo_hotel_chambord.png">
 </head>
 <body>
-   <!--==================== HEADER ====================-->
- <header style="z-index: 10;">
+ <!--==================== HEADER ====================-->
+ <header>
   <nav class="d-flex justify-content-between nav__mobile">
     <a href="index.html" id="nav__a-logo">
       <img
@@ -106,29 +106,57 @@
              </div>
          </div>
      </section>
-
     <!--==================== SECTION 2 ====================-->
     <section id="section2">
+        <h2>Présentation</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8golDDGRrdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-     <form action="index.html">
-        <div id="form__tablet">
-            <div class="form_div" id="arriveDepart">
-                <label for="arrivedepart">Arrivée - Départ</label>
-                <input type="text" id="arrivedepart" placeholder="01/06/2023 - 09/06/2023" style="width: 150px; margin-left: 10px;"/>
+        <h2>Événements</h2>
+        <div id="section2__div">
+            <div>
+                <img src="img/evenement1.jpeg" alt="evenement">
+                <h3>Manolo Valdés, Monumentakes Égéries</h3>
+                    <h4>Actualités, Événements</h4>
+                        <p>Le Comité George V, son président Rémy Makinadjian et son directeur artistique Bruno Darde, …</p>  
             </div>
-            <div class="form_div" id="invite">
-                <label for="invites">Invités</label>
-                <input type="text" id="invites" placeholder="1 chambre - 2 adultes" style="width: 120px; margin-left: 10px;"/>
+            <div>
+                <img src="img/evenement2.jpeg" alt="evenement">
+                <h3>Le Fouquet's rouvre</h3>
+                    <h4>Actualités, Client</h4>
+                        <p>Fête Nat, le 14 juillet, le témoin des grands cafés parisiens, lieu de mémoire, emblème du …</p>  
             </div>
-            <div class="form_div" id="codePromo">
-                <label for="promo">Promo</label>
-                <input type="text" id="promo" placeholder="Code Promo" style="margin-left: 10px;"/>
+            <div>
+                <img src="img/evenement3.jpeg" alt="evenement">
+                <h3>Réunion préparatoire</h3>
+                    <h4>Actualités, Comité</h4>
+                        <p>Le 20 juin au matin, réunion de travail au Fouquet’s avec les représentants du Comité George V …</p>  
             </div>
-            <input type="submit" value="Valider dates !"/>
+            <div>
+                <img src="img/evenement4.jpeg" alt="evenement">
+                <h3>BMW Brand Store - Art Car</h3>
+                    <h4>Actualités, Enseigne</h4>
+                        <p>Les Maîtres de l’Art Contemporain La Collection commence en 1975. Cette expérience artistique …</p>  
+            </div>
+            <div>
+                <img src="img/evenement5.jpeg" alt="evenement">
+                <h3>L'escadrille s'anime le jeudi soir</h3>
+                    <h4>Actualités, Client</h4>
+                        <p>Depuis décembre, le jeudi à partir de 19h, ambiance « After-work », un DJ fait tanguer le …</p>  
+            </div>
+            <div>
+                <img src="img/evenement6.jpeg" alt="evenement">
+                <h3>Stéphanie Le Quellec décroche 2 étoiles au Michelin</h3>
+                    <h4>Actualités, Événements</h4>
+                        <p>Une deuxième étoile au Michelin consacre aujourd’hui celle qui, enfant, jouait à la …</p>  
+            </div>
+            <div>
+                <img src="img/evenement7.jpeg" alt="evenement">
+                <h3>Joyeuses Fêtes</h3>
+                    <h4>Actualités, Événements</h4>
+                        <p>Saluons les éclairages de l’avenue, une première dans son histoire (l’avenue …</p>  
+            </div>
         </div>
-     </form>
-
-     <div class="calendar"></div>
+       
     </section>
     <!--==================== LAST SECTION ====================-->
     <section id="navigation-sticky-lastsection">
@@ -206,6 +234,6 @@
     <!--==================== HEADER JS ====================-->
     <script src="js/header.js"></script>
     <!--==================== MAIN JS ====================-->
-    <script src="js/reservation.js"></script>
+    <script src=""></script>
 </body>
 </html>

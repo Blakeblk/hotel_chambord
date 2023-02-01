@@ -1,0 +1,57 @@
+/* <!--==================== SECTION 2 ====================--> */
+
+#section2 img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#section2 h2 {
+    font-family: 'cinzel decorative', cursive;
+    font-size: 1.3rem;
+    margin: 30px auto 20px auto;
+    text-align: center;
+}
+
+#section2 p {
+    font-family: 'raleway', sans-serif;
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .section2__flex__tablet {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .section2__div {
+        width: 50%;
+    }
+    #section2__lstdiv {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .section2__desktop {
+        display: flex;
+    }
+    #section2 p {
+       margin-bottom: 0;
+    }
+    #section2__biglstdiv {
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 30px 30px 70px 30px;
+    }
+    .section2__flex__tablet {
+        color: #000000 !important;
+        background: #ffffff !important;
+        padding-bottom: 30px;
+    }
+}

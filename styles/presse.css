@@ -1,0 +1,65 @@
+/*==================== SECTION 2 ====================*/
+#section2 img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+#section2 h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 1.9rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#section2 h2,
+#section2 h3,
+#section2 h4 {
+    font-family: 'tangerine', cursive;
+    text-align: center;
+}
+
+#section2 h3 {
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+#section2 h4 {
+    padding: 5px;
+    font-size: 1.2rem;
+    color: rgb(135, 135, 27);
+}
+
+#section2 p {
+    font-family: 'raleway', sans-serif;
+    text-align: justify;
+    padding: 5px 10px 40px 10px;
+}
+
+/*==================== TABLET ====================*/
+@media screen and (min-width:768px){
+    #section2__div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #section2__div div {
+        width: 50%;
+    }
+}
+
+/*==================== DESKTOP ====================*/
+@media screen and (min-width: 1024px){
+    #section2__div div {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    #section2__div div {
+        width: 25%;
+    }
+}

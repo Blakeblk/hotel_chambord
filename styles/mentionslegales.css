@@ -1,0 +1,23 @@
+#section2 h2,
+#section2 h3 {
+    font-family: 'tangerine', cursive;
+    text-align: center;
+}
+
+#section2 h2 {
+    font-size: 1.9rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#section2 h3 {
+    font-size: 1.4rem;
+    padding: ;
+}
+
+#section2 p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'raleway', sans-serif;
+    padding: 0 10px 10px 10px;
+}

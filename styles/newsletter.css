@@ -1,0 +1,71 @@
+/*==================== SECTION 2 ====================*/
+#section2 h2,
+#section2 p {
+    font-family: 'tangerine', cursive;
+    text-align: center;
+}
+
+#section2 h2 {
+    padding: 20px 0;
+}
+
+/*==================== FORMULAIRE ====================*/
+#section2 form { 
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Tangerine', cursive;
+}
+
+label {
+    font-family: 'Tangerine', cursive;
+    display: inline-block;
+    margin: auto;
+}
+
+input {
+    margin: 20px 3px;
+    height: 40px;
+    display: inline-block;
+    margin: 10px auto;
+    font-family: 'Tangerine', cursive;
+}
+
+input:focus {
+    background-color: #000;
+    color: #fff;
+
+}
+
+input[type='submit'] {
+    font-family: 'Raleway', sans-serif;
+    background-color: #000;
+    color: #FFF;
+    display: block;
+    margin: 40px auto 20px auto;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    text-transform: uppercase;
+}
+
+input[type='submit']:hover {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-family: 'Tangerine', cursive;
+    text-align: justify;
+}
+
+input[type='email'] {
+    display: block;
+    width: 298px;
+}
+
+input[type='textarea'] {
+    height: 150px;
+}
